@@ -1,9 +1,8 @@
 
+export default async function getAllUsers() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users')
 
-async function getAllUsers() {
-  return (
-    <div>getAllUsers</div>
-  )
+    if (!res.ok) throw new Error('failed to fetch data')
+
+    return res.json()
 }
-
-export default getAllUsers

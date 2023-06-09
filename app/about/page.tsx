@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 
 export const metadata:Metadata = {
-    title: "about",
+    title: "About",
 }
 
 
@@ -12,7 +12,7 @@ function About() {
   return (
     <>
     <h1>About</h1>
-    <Link href="/"> link to home page</Link>
+    <Link href="/">link to home page</Link>
     </>
   )
 }
